@@ -11,6 +11,7 @@ type User struct {
 	Phone     string    `json:"phone" gorm:"type: VARCHAR(255)"`
 	Address   string    `json:"address" gorm:"type: VARCHAR(255)"`
 	Subscribe bool      `json:"subscribe" gorm:"default: false"`
+	Role      string    `json:"role"`
 	CreatedAt time.Time `json:"-"`
 	UpdatedAt time.Time `json:"-"`
 }
