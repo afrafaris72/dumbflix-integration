@@ -20,7 +20,7 @@ function Payment() {
           Authorization: "Bearer " + localStorage.token,
         },
       };
-      const response = await API.get("/check-auth", config);
+      const response = await API.get("/users", config);
       return response.data.data;
     }
   );
