@@ -16,7 +16,7 @@ function DetailTrailer() {
   // console.log("state", state);
   const { id } = useParams();
   let { data: films } = useQuery("detailCache", async () => {
-    const response = await API.get("/film/" + id);
+    const response = await API.get("/movie/" + id);
     console.log("response film", response);
     return response.data.data;
   });

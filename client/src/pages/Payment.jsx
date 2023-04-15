@@ -29,8 +29,7 @@ function Payment() {
     //change this to the script source you want to load, for example this is snap.js sandbox env
     const midtransScriptUrl = "https://app.sandbox.midtrans.com/snap/snap.js";
     //change this according to your client-key
-    // const myMidtransClientKey = "SB-Mid-client-aAfwA9NGkcUy4r0-";
-    const myMidtransClientKey = process.env.REACT_APP_MIDTRANS_CLIENT_KEY;
+    const myMidtransClientKey = "SB Client Key";
 
     let scriptTag = document.createElement("script");
     scriptTag.src = midtransScriptUrl;
@@ -195,7 +194,7 @@ function Payment() {
                     className=" mb-3 w-100 mx-auto "
                     style={{ backgroundColor: "#E50914", border: "1px white" }}
                   >
-                    Bayar
+                    Kirim
                   </Button>
                 </div>
               </form>

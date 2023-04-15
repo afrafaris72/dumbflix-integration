@@ -27,7 +27,7 @@ function CardList() {
   const state = useContext(UserContext);
   console.log("state", state);
   let { data: films } = useQuery("filmsCache", async () => {
-    const response = await API.get("/films");
+    const response = await API.get("/movies");
     console.log("response", response);
     return response.data.data;
   });
