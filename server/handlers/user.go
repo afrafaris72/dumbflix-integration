@@ -79,5 +79,6 @@ func convertResponse(u models.User) usersdto.UserResponse {
 		Phone:     u.Phone,
 		Address:   u.Address,
 		Subscribe: u.Subscribe,
+		Role:      u.Role,
 	}
 }

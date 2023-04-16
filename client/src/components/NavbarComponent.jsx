@@ -86,7 +86,7 @@ function NavbarComponent() {
     try {
       e.preventDefault();
 
-      // Configuration of Content-type
+      // Configuration Content-type
       const config = {
         headers: {
           "Content-type": "application/json",
@@ -103,10 +103,6 @@ function NavbarComponent() {
         // Send data to useContext
         handleCloseRegister();
         handleShowLogin();
-        dispatch({
-          type: "USER_SUCCESS",
-          payload: response.data.data,
-        });
       }
       // Handling response here
     } catch (error) {
@@ -469,7 +465,7 @@ function NavbarComponent() {
                 borderRadius: "5px",
               }}
               className="w-100 pt-2 pb-2 mt-3"
-              onClick={() => handleSubmit}
+              onClick={()=>{handleSubmit}}
               type="submit"
             >
               <b>Login</b>

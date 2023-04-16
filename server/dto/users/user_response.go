@@ -9,4 +9,5 @@ type UserResponse struct {
 	Phone     string `json:"phone" form:"phone"`
 	Address   string `json:"address" form:"address"`
 	Subscribe bool   `json:"subscribe" form:"subscribe"`
+	Role      string `json:"role" form:"role"`
 }
